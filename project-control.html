@@ -37,58 +37,80 @@
         .main-nav button:hover { color: var(--slate-900); }
         .main-nav button.active { color: var(--primary); border-bottom-color: var(--primary); }
 
-        @media (max-width: 768px) {
-            body {
-                height: auto;
-                min-height: 100vh;
-                overflow: auto;
-            }
-
-            header {
-                flex-wrap: wrap;
-                gap: 8px;
-                padding: 12px 16px;
-            }
-
-            .logo-area {
-                width: 100%;
-            }
-
-            .main-nav {
-                justify-content: flex-start;
-                padding: 0 16px;
-                gap: 12px;
-            }
-
-            .main-nav button {
-                padding: 10px 0;
-                font-size: 0.72rem;
-            }
-
-            .viewport {
-                padding: 16px;
+        @media (max-width: 980px) {
+            .project-layout {
+                grid-template-columns: 1fr;
             }
 
             .container {
                 max-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                height: auto;
+                min-height: 100vh;
+                overflow-x: hidden;
+            }
+
+            header {
+                gap: 8px;
+                padding: 12px 16px;
+                align-items: center;
+            }
+
+            .logo-area {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .logo-area h1 {
+                font-size: 0.98rem;
+            }
+
+            .main-nav {
+                justify-content: flex-start;
+                padding: 0 12px;
+                gap: 8px;
+                overflow-x: auto;
+                scrollbar-width: none;
+            }
+
+            .main-nav::-webkit-scrollbar {
+                display: none;
+            }
+
+            .main-nav button {
+                padding: 10px 6px;
+                font-size: 0.68rem;
+                letter-spacing: 0.2px;
+            }
+
+            .viewport {
+                padding: 16px 12px 28px;
             }
 
             h2 {
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 10px;
+                font-size: 1.15rem;
+            }
+
+            .panel,
+            .project-card {
+                padding: 14px;
             }
 
             .project-grid {
                 grid-template-columns: 1fr;
             }
 
-            .project-layout {
-                grid-template-columns: 1fr;
-            }
-
             .form-row {
-                flex-direction: column;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 10px;
             }
 
             .form-control,
@@ -113,33 +135,46 @@
             .ledger-row {
                 min-width: 520px;
             }
+
+            .modal-content {
+                width: min(92vw, 420px);
+            }
+
+            .modal-body {
+                padding: 18px;
+            }
+
+            .modal-footer {
+                padding: 14px 18px;
+                flex-direction: column-reverse;
+            }
+
+            .modal-footer .btn {
+                width: 100%;
+            }
         }
 
         @media (max-width: 480px) {
-            .viewport {
-                padding: 12px;
-            }
-
             header {
                 padding: 10px 12px;
             }
 
             .logo-area h1 {
-                font-size: 0.95rem;
+                font-size: 0.92rem;
+            }
+
+            .viewport {
+                padding: 12px 10px 20px;
             }
 
             .main-nav {
-                gap: 10px;
+                gap: 6px;
+                padding: 0 10px;
             }
 
             .main-nav button {
-                font-size: 0.68rem;
-                letter-spacing: 0.2px;
-            }
-
-            .panel,
-            .project-card {
-                padding: 14px;
+                font-size: 0.62rem;
+                letter-spacing: 0.15px;
             }
 
             .fin-banner {
@@ -148,6 +183,23 @@
 
             .btn {
                 width: 100%;
+            }
+
+            #project-actions {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+
+            .doc-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .doc-meta {
+                text-align: left;
             }
         }
 
