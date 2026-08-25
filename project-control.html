@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -273,7 +273,7 @@
 
     <div class="main-nav" id="main-nav">
         <button id="tab-home" class="active" onclick="app.switchTab('mod-home', this)">Cantieri</button>
-        <button id="tab-leads" onclick="app.switchTab('mod-leads', this)">Opportunità / Sopralluoghi</button>
+        <button id="tab-leads" onclick="app.switchTab('mod-leads', this)">Opportunit├á / Sopralluoghi</button>
         <button id="tab-archivio" onclick="app.switchTab('mod-archivio', this)">Storico</button>
         <button id="tab-magazzino" onclick="app.switchTab('mod-magazzino', this)">Magazzino</button>
         <button id="tab-preventivi" onclick="app.switchTab('mod-preventivi', this)">Preventivi</button>
@@ -291,7 +291,7 @@
 
         <!-- MODULO LEADS / SOPRALLUOGHI -->
         <div id="mod-leads" class="module container">
-            <h2>Opportunità e Sopralluoghi</h2>
+            <h2>Opportunit├á e Sopralluoghi</h2>
             <div class="panel no-print">
                 <div class="form-row">
                     <input type="text" id="lead-title" placeholder="Nome Cliente o Indirizzo Immobile" style="flex:2">
@@ -350,19 +350,19 @@
 
             <div class="fin-banner" id="fin-banner-area">
                 <div class="fin-stat">
-                    <span id="label-budget">Target/Preventivo (€)</span>
+                    <span id="label-budget">Target/Preventivo (Ôé¼)</span>
                     <input type="number" id="input-project-budget" step="0.01" onchange="app.aggiornaBudget(this.value)">
                 </div>
                 <div class="fin-stat">
-                    <span>Uscite Reali (€)</span>
+                    <span>Uscite Reali (Ôé¼)</span>
                     <strong id="stat-costi">0,00</strong>
                 </div>
                 <div class="fin-stat">
-                    <span>Incassi Reali (€)</span>
+                    <span>Incassi Reali (Ôé¼)</span>
                     <strong id="stat-incassi">0,00</strong>
                 </div>
                 <div class="fin-stat">
-                    <span id="label-stat-utile">Utile / Bilancio (€)</span>
+                    <span id="label-stat-utile">Utile / Bilancio (Ôé¼)</span>
                     <strong id="stat-utile">0,00</strong>
                 </div>
             </div>
@@ -390,7 +390,7 @@
                         <select id="op-assignee"><option value="">-- Ditta / Fornitore --</option></select>
                     </div>
                     <div class="form-row">
-                        <input type="number" id="op-amount" step="0.01" placeholder="Importo Finale (€)">
+                        <input type="number" id="op-amount" step="0.01" placeholder="Importo Finale (Ôé¼)">
                     </div>
                     <button class="btn btn-primary" style="width:100%" onclick="app.aggiungiOperazione()">Registra a Bilancio</button>
                 </div>
@@ -402,7 +402,7 @@
                             <div></div>
                             <div>Categoria</div>
                             <div>Descrizione / Ditta</div>
-                            <div class="col-right">Importo (€)</div>
+                            <div class="col-right">Importo (Ôé¼)</div>
                             <div class="col-right no-print" id="th-azioni">Azioni</div>
                         </div>
                         <div id="operations-list" style="min-width: 600px;"></div>
@@ -424,14 +424,14 @@
                         <option value="KG">Chilogrammi (KG)</option>
                         <option value="LT">Litri (LT)</option>
                     </select>
-                    <input type="number" id="inv-qty" placeholder="Quantità Iniziale" step="0.01" style="flex:1">
-                    <input type="number" id="inv-cost" placeholder="Costo Unitario (€)" step="0.01" style="flex:1">
+                    <input type="number" id="inv-qty" placeholder="Quantit├á Iniziale" step="0.01" style="flex:1">
+                    <input type="number" id="inv-cost" placeholder="Costo Unitario (Ôé¼)" step="0.01" style="flex:1">
                     <button class="btn btn-primary" onclick="app.aggiungiMagazzino()">Aggiungi Articolo</button>
                 </div>
             </div>
             <div class="panel" style="padding:0; overflow-x: auto;">
                 <table style="min-width: 600px;">
-                    <thead><tr><th>Articolo</th><th class="col-right">Quantità Disponibile</th><th>Unità</th><th class="col-right">Costo Un.</th><th class="col-right">Valore Totale</th><th class="col-right no-print">Azione</th></tr></thead>
+                    <thead><tr><th>Articolo</th><th class="col-right">Quantit├á Disponibile</th><th>Unit├á</th><th class="col-right">Costo Un.</th><th class="col-right">Valore Totale</th><th class="col-right no-print">Azione</th></tr></thead>
                     <tbody id="inventory-list"></tbody>
                 </table>
             </div>
@@ -448,8 +448,8 @@
                 </div>
                 <div class="form-row" style="border-top: 1px solid var(--border); padding-top: 12px; margin-top: 12px;">
                     <input type="text" id="prev-item-desc" placeholder="Descrizione Lavorazione" style="flex:2">
-                    <input type="number" id="prev-item-qty" placeholder="Quantità" step="0.01" style="flex:1">
-                    <input type="number" id="prev-item-price" placeholder="Prezzo Unitario (€)" step="0.01" style="flex:1">
+                    <input type="number" id="prev-item-qty" placeholder="Quantit├á" step="0.01" style="flex:1">
+                    <input type="number" id="prev-item-price" placeholder="Prezzo Unitario (Ôé¼)" step="0.01" style="flex:1">
                     <button class="btn btn-outline" onclick="app.aggiungiRigaPreventivo()">Aggiungi Riga</button>
                 </div>
                 <div class="form-row" style="margin-top:12px;">
@@ -473,12 +473,12 @@
                     <span id="doc-out-client">Nome Cliente</span>
                 </div>
                 <table class="doc-table">
-                    <thead><tr><th>Descrizione Lavorazione</th><th class="col-right">Q.tà</th><th class="col-right">Prezzo Unit.</th><th class="col-right">Importo Totale</th></tr></thead>
+                    <thead><tr><th>Descrizione Lavorazione</th><th class="col-right">Q.t├á</th><th class="col-right">Prezzo Unit.</th><th class="col-right">Importo Totale</th></tr></thead>
                     <tbody id="doc-out-rows"></tbody>
                 </table>
                 <div class="doc-totals">
-                    Totale Imponibile: <span id="doc-out-subtotal">0,00</span> €<br>
-                    <strong>Totale Preventivo: <span id="doc-out-total">0,00</span> €</strong>
+                    Totale Imponibile: <span id="doc-out-subtotal">0,00</span> Ôé¼<br>
+                    <strong>Totale Preventivo: <span id="doc-out-total">0,00</span> Ôé¼</strong>
                 </div>
             </div>
         </div>
@@ -511,7 +511,7 @@
                 </div>
             </div>
             <div class="panel" style="padding:0; overflow-x: auto;">
-                <table style="min-width: 600px;"><thead><tr><th>Data</th><th>Descrizione</th><th>Flusso</th><th class="col-right">Importo (€)</th><th class="col-right no-print">Azioni</th></tr></thead><tbody id="dues-list"></tbody></table>
+                <table style="min-width: 600px;"><thead><tr><th>Data</th><th>Descrizione</th><th>Flusso</th><th class="col-right">Importo (Ôé¼)</th><th class="col-right no-print">Azioni</th></tr></thead><tbody id="dues-list"></tbody></table>
             </div>
         </div>
 
@@ -522,7 +522,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h3>Nuovo Cantiere Attivo</h3>
-                <button class="btn-icon" onclick="app.chiudiModaleProgetto()">✕</button>
+                <button class="btn-icon" onclick="app.chiudiModaleProgetto()">Ô£ò</button>
             </div>
             <div class="modal-body">
                 <div class="form-row">
@@ -537,7 +537,7 @@
                     </select>
                 </div>
                 <div class="form-row" style="margin-top:10px;">
-                    <label style="width: 100%;">Target Vendita / Valore Appalto (€) - Opzionale</label>
+                    <label style="width: 100%;">Target Vendita / Valore Appalto (Ôé¼) - Opzionale</label>
                     <input type="number" id="new-proj-budget" step="0.01" placeholder="0.00">
                 </div>
             </div>
@@ -648,14 +648,14 @@
                 else this.switchTab('mod-home', document.getElementById('tab-home'));
             },
 
-            // --- LEADS / OPPORTUNITÀ ---
+            // --- LEADS / OPPORTUNIT├Ç ---
             aggiungiLead() {
                 const title = document.getElementById('lead-title').value.trim();
                 const type = document.getElementById('lead-type').value;
                 const status = document.getElementById('lead-status').value;
                 const notes = document.getElementById('lead-notes').value.trim();
                 
-                if(!title) { this.showAlert("Inserisci il nome o l'indirizzo dell'opportunità."); return; }
+                if(!title) { this.showAlert("Inserisci il nome o l'indirizzo dell'opportunit├á."); return; }
                 
                 this.db.leads.push({ id: 'ld_' + Date.now(), title, type, status, notes });
                 this.save(); this.renderLeads();
@@ -672,7 +672,7 @@
             promuoviLead(id) {
                 const lead = this.db.leads.find(l => l.id === id);
                 if(!lead) return;
-                this.showConfirm(`Convertire l'opportunità "${lead.title}" in un Cantiere Attivo?`, () => {
+                this.showConfirm(`Convertire l'opportunit├á "${lead.title}" in un Cantiere Attivo?`, () => {
                     const newId = 'prj_' + Date.now();
                     this.db.projects[newId] = { id: newId, name: lead.title, type: lead.type, status: 'active' };
                     this.db.data[newId] = { budget: 0, ops: [] };
@@ -686,7 +686,7 @@
                 const tbody = document.getElementById('leads-list');
                 tbody.innerHTML = '';
                 if(this.db.leads.length === 0) {
-                    tbody.innerHTML = '<tr><td colspan="3" style="text-align:center; color:var(--text-muted); padding:20px;">Nessuna opportunità registrata.</td></tr>';
+                    tbody.innerHTML = '<tr><td colspan="3" style="text-align:center; color:var(--text-muted); padding:20px;">Nessuna opportunit├á registrata.</td></tr>';
                     return;
                 }
                 
@@ -739,7 +739,7 @@
                 this.apriProgetto(id);
             },
             eliminaProgetto() {
-                this.showConfirm("Eliminare definitivamente il cantiere? L'azione è irreversibile.", () => {
+                this.showConfirm("Eliminare definitivamente il cantiere? L'azione ├¿ irreversibile.", () => {
                     delete this.db.projects[this.currentProject]; delete this.db.data[this.currentProject];
                     const wasClosed = document.getElementById('project-status-btn').innerHTML.includes('Riapri');
                     this.currentProject = null; this.save();
@@ -748,13 +748,13 @@
                 });
             },
             chiudiProgetto() {
-                this.showConfirm("Chiudere e archiviare il cantiere? Il bilancio verrà congelato.", () => {
+                this.showConfirm("Chiudere e archiviare il cantiere? Il bilancio verr├á congelato.", () => {
                     this.db.projects[this.currentProject].status = 'closed';
                     this.save(); this.apriProgetto(this.currentProject); 
                 });
             },
             riapriProgetto() {
-                this.showConfirm("Vuoi riaprire il cantiere? Tornerà nella Dashboard attiva.", () => {
+                this.showConfirm("Vuoi riaprire il cantiere? Torner├á nella Dashboard attiva.", () => {
                     this.db.projects[this.currentProject].status = 'active';
                     this.save(); this.apriProgetto(this.currentProject);
                 });
@@ -814,7 +814,7 @@
                     `;
                 });
                 html += '</div>';
-                if(count === 0) list.innerHTML = '<div style="padding: 20px; color:var(--text-muted); text-align:center; border:1px dashed var(--slate-300); border-radius:var(--radius);">L\'archivio storico è vuoto.</div>';
+                if(count === 0) list.innerHTML = '<div style="padding: 20px; color:var(--text-muted); text-align:center; border:1px dashed var(--slate-300); border-radius:var(--radius);">L\'archivio storico ├¿ vuoto.</div>';
                 else list.innerHTML = html;
             },
 
@@ -831,8 +831,8 @@
                 document.getElementById('project-badge').style.color = 'var(--slate-800)';
                 document.getElementById('project-badge').style.background = 'var(--slate-100)';
 
-                document.getElementById('label-budget').innerText = p.type === 'flip' ? 'Target Vendita stimato (€)' : 'Valore Appalto / Contratto (€)';
-                document.getElementById('label-stat-utile').innerText = isClosed ? 'UTILE FINALE (€)' : 'Utile Attuale / Bilancio (€)';
+                document.getElementById('label-budget').innerText = p.type === 'flip' ? 'Target Vendita stimato (Ôé¼)' : 'Valore Appalto / Contratto (Ôé¼)';
+                document.getElementById('label-stat-utile').innerText = isClosed ? 'UTILE FINALE (Ôé¼)' : 'Utile Attuale / Bilancio (Ôé¼)';
                 
                 const btnArea = document.getElementById('project-status-btn');
                 if(isClosed) {
@@ -870,13 +870,13 @@
                     document.getElementById('row-desc').style.display = 'none';
                     document.getElementById('row-assignee').style.display = 'none';
                     document.getElementById('row-inventory').style.display = 'flex';
-                    document.getElementById('op-amount').placeholder = "Quantità da scaricare";
+                    document.getElementById('op-amount').placeholder = "Quantit├á da scaricare";
                 } else {
                     document.getElementById('row-category').style.display = 'flex';
                     document.getElementById('row-desc').style.display = 'flex';
                     document.getElementById('row-assignee').style.display = 'flex';
                     document.getElementById('row-inventory').style.display = 'none';
-                    document.getElementById('op-amount').placeholder = "Importo Reale (€)";
+                    document.getElementById('op-amount').placeholder = "Importo Reale (Ôé¼)";
                 }
             },
 
@@ -885,7 +885,7 @@
                 const rawAmount = document.getElementById('op-amount').value.replace(',', '.');
                 const amount = parseFloat(rawAmount);
 
-                if(isNaN(amount) || amount <= 0) { this.showAlert("Inserisci una quantità o un importo valido."); return; }
+                if(isNaN(amount) || amount <= 0) { this.showAlert("Inserisci una quantit├á o un importo valido."); return; }
 
                 let title = '', category = '', assignee = '', cost = amount;
 
@@ -893,7 +893,7 @@
                     const invId = document.getElementById('op-inv-item').value;
                     if(!invId) { this.showAlert("Seleziona un articolo."); return; }
                     const item = this.db.inventory.find(i => i.id === invId);
-                    if(item.qty < amount) { this.showAlert(`Disponibilità insufficiente! (Giacenza: ${item.qty})`); return; }
+                    if(item.qty < amount) { this.showAlert(`Disponibilit├á insufficiente! (Giacenza: ${item.qty})`); return; }
                     
                     item.qty -= amount; 
                     title = `Scarico Mat: ${item.name} (${amount} ${item.unit})`;
@@ -932,13 +932,13 @@
                     let st = '', valStr = '';
                     if(o.type === 'expense') { 
                         costi += o.amount; 
-                        st = '<span style="color:var(--slate-900)">▼</span>'; 
-                        valStr = `<span class="text-danger">-${this.formatMoney(o.amount)} €</span>`; 
+                        st = '<span style="color:var(--slate-900)">Ôû╝</span>'; 
+                        valStr = `<span class="text-danger">-${this.formatMoney(o.amount)} Ôé¼</span>`; 
                     }
                     if(o.type === 'income') { 
                         incassi += o.amount; 
-                        st = '<span style="color:var(--slate-900)">▲</span>'; 
-                        valStr = `<span class="text-success">+${this.formatMoney(o.amount)} €</span>`; 
+                        st = '<span style="color:var(--slate-900)">Ôû▓</span>'; 
+                        valStr = `<span class="text-success">+${this.formatMoney(o.amount)} Ôé¼</span>`; 
                     }
 
                     list.innerHTML += `
@@ -946,7 +946,7 @@
                             <div>${st}</div><div><span class="cat-badge">${o.category}</span></div>
                             <div><div class="op-title">${o.title}</div>${o.assignee ? `<div class="op-meta">${o.assignee}</div>` : ''}</div>
                             <div class="col-right">${valStr}</div>
-                            <div class="col-right no-print" style="display:${isClosed ? 'none' : 'block'}">${!isClosed ? `<button class="btn-icon" onclick="app.eliminaOperazione('${o.id}')">✕</button>` : ''}</div>
+                            <div class="col-right no-print" style="display:${isClosed ? 'none' : 'block'}">${!isClosed ? `<button class="btn-icon" onclick="app.eliminaOperazione('${o.id}')">Ô£ò</button>` : ''}</div>
                         </div>`;
                 });
 
@@ -978,7 +978,7 @@
             renderMagazzino() {
                 const tbody = document.getElementById('inventory-list'); tbody.innerHTML = '';
                 this.db.inventory.forEach(i => {
-                    tbody.innerHTML += `<tr><td><strong>${i.name}</strong></td><td class="col-right">${i.qty}</td><td>${i.unit}</td><td class="col-right">${this.formatMoney(i.cost)} €</td><td class="col-right"><strong>${this.formatMoney(i.qty * i.cost)} €</strong></td><td class="col-right no-print"><button class="btn-icon" onclick="app.eliminaMagazzino('${i.id}')">✕</button></td></tr>`;
+                    tbody.innerHTML += `<tr><td><strong>${i.name}</strong></td><td class="col-right">${i.qty}</td><td>${i.unit}</td><td class="col-right">${this.formatMoney(i.cost)} Ôé¼</td><td class="col-right"><strong>${this.formatMoney(i.qty * i.cost)} Ôé¼</strong></td><td class="col-right no-print"><button class="btn-icon" onclick="app.eliminaMagazzino('${i.id}')">Ô£ò</button></td></tr>`;
                 });
             },
             aggiornaSelectMagazzino() {
@@ -1027,7 +1027,7 @@
                 q.items.forEach(i => {
                     const rowTotal = i.qty * i.price;
                     total += rowTotal;
-                    tbody.innerHTML += `<tr><td>${i.desc}</td><td class="col-right">${i.qty}</td><td class="col-right">${this.formatMoney(i.price)} €</td><td class="col-right">${this.formatMoney(rowTotal)} €</td></tr>`;
+                    tbody.innerHTML += `<tr><td>${i.desc}</td><td class="col-right">${i.qty}</td><td class="col-right">${this.formatMoney(i.price)} Ôé¼</td><td class="col-right">${this.formatMoney(rowTotal)} Ôé¼</td></tr>`;
                 });
                 document.getElementById('doc-out-subtotal').innerText = this.formatMoney(total);
                 document.getElementById('doc-out-total').innerText = this.formatMoney(total);
@@ -1054,7 +1054,7 @@
             },
             renderFornitori() {
                 const t = document.getElementById('suppliers-list'); t.innerHTML = '';
-                this.db.suppliers.forEach(s => t.innerHTML += `<tr><td><strong>${s.name}</strong></td><td>${s.service}</td><td>${s.contact}</td><td class="col-right no-print"><button class="btn-icon" onclick="app.eliminaFornitore('${s.id}')">✕</button></td></tr>`);
+                this.db.suppliers.forEach(s => t.innerHTML += `<tr><td><strong>${s.name}</strong></td><td>${s.service}</td><td>${s.contact}</td><td class="col-right no-print"><button class="btn-icon" onclick="app.eliminaFornitore('${s.id}')">Ô£ò</button></td></tr>`);
                 if(this.currentProject && this.db.projects[this.currentProject].status !== 'closed') this.aggiornaSelectDitte();
             },
             aggiungiScadenza() {
@@ -1083,10 +1083,10 @@
                         <td>${d.date||'-'}</td>
                         <td><strong>${d.desc}</strong></td>
                         <td><span class="badge" style="color:var(--slate-800); border-color:currentColor;">${d.type==='uscita'?'Da Pagare':'Da Incassare'}</span></td>
-                        <td class="col-right"><strong>${this.formatMoney(d.amount)} €</strong></td>
+                        <td class="col-right"><strong>${this.formatMoney(d.amount)} Ôé¼</strong></td>
                         <td class="col-right no-print">
                             <button class="btn-outline" style="padding:2px 6px; font-size:0.7rem; margin-right:8px;" onclick="app.scaricaICS('${d.desc}', '${d.date}')">Calendario</button>
-                            <button class="btn-icon" onclick="app.eliminaScadenza('${d.id}')">✕</button>
+                            <button class="btn-icon" onclick="app.eliminaScadenza('${d.id}')">Ô£ò</button>
                         </td>
                     </tr>
                 `);
@@ -1099,3 +1099,4 @@
     </script>
 </body>
 </html>
+
